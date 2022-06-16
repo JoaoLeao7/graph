@@ -160,7 +160,7 @@ public class GraphImpl<V, E> implements Graph<V, E>
 
         int degree = 0;
         for (V otherVert : vertices.keySet())
-            if (getEdge(otherVert, vert) == null)
+            if (getEdge(otherVert, vert) != null)
                 degree++;
 
         return degree;
